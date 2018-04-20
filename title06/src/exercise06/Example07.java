@@ -22,6 +22,6 @@ class MyPoint {
 	}
 	
 	double getDistance(int x1, int y1) {
-		return Math.sqrt((double)((this.x-x1)*(this.x-x1) + (this.y-y1)*(this.y-y1)));
+		return Math.sqrt((double)((x-x1)*(x-x1) + (y-y1)*(y-y1)));
 	}
 }

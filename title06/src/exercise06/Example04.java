@@ -45,9 +45,6 @@ class Student {
 	}
 	
 	float getAverage() {
-		/*float result = this.getTotal() / 3.0f + 0.05f;
-		result = (float)((int)(result * 10) * 0.1); 
-		return result;*/
 		return (int)(getTotal() / 3f * 10 + 0.5f) / 10f;
 	}
 	
