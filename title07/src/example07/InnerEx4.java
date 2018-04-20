@@ -17,7 +17,7 @@ class Outer {
 	}
 }
 
-public class InnerEx4 {
+public class InnerEx4 { // p.408
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// instance class의 인스턴스를 생성하려면

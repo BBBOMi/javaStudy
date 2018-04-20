@@ -1,17 +1,17 @@
-/*package exercise07;
+package exercise07;
 
 public class Example18 {
 	public static void action(Robot r) {
-		Object obj = r;
-		if(obj instanceof Robot) {
-			if(obj instanceof DanceRobot)
-				obj.dance();
-			else if(obj instanceof SingRobot)
-				r.sing();
-			else if(r instanceof DrawRobot)
-				r.draw();
-		} else
-			return;
+			if(r instanceof DanceRobot) {
+				DanceRobot dr = (DanceRobot)r;
+				dr.dance();
+			} else if(r instanceof SingRobot) {
+				SingRobot sr = (SingRobot)r;
+				sr.sing();
+			} else if(r instanceof DrawRobot) {
+				DrawRobot dr = (DrawRobot)r;
+				dr.draw();
+		}
 	}
 
 	public static void main(String[] args) {
@@ -42,4 +42,4 @@ class DrawRobot extends Robot {
 	void draw() {
 		System.out.println("그림을 그립니다.");
 	}
-}*/
+}

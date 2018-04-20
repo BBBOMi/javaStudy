@@ -6,10 +6,10 @@ class SutdaDeck {
 	
 	SutdaDeck() {
 		for(int i=0; i<cards.length; i++) {
-			if(i<10) {
-				cards[i] = new SutdaCard(i+1,((i+1==1 || i+1==3 || i+1==8) ? true : false ));
-			} else
-				cards[i] = new SutdaCard(i-9, false);
+			int num = i % 10 + 1;
+			boolean isKwang = (i < 10) && (num == 1 || num == 3 || num == 8);
+			
+			cards[i] = new SutdaCard(num, isKwang);
 		}
 	} // Example01
 	
@@ -20,33 +20,34 @@ class SutdaDeck {
 			cards[i] = cards[ind];
 			cards[ind] = tmp;
 		}
-	}
+	} // Example02_1
 	
 	SutdaCard pick(int index) {
+		if(index < 0 || index >= CARD_NUM) return null; // 유효성 검사
 		return cards[index];
-	}
+	} // Example02_2
 	
 	SutdaCard pick() {
 		int index = (int) (Math.random() * cards.length);
 		return pick(index);
-	}
+	} // Example02_3
 }
 
 class SutdaCard {
-	int num;
-	boolean isKwang;
+	final int NUM;
+	final boolean IS_KWANG;
 	
 	SutdaCard() {
 		this(1, true);
 	}
 	
 	SutdaCard(int num, boolean isKwang) {
-		this.num = num;
-		this.isKwang = isKwang;
+		this.NUM = num;
+		this.IS_KWANG = isKwang;
 	}
 	
 	public String toString() {
-		return num + (isKwang ? "K" : "");
+		return NUM + (IS_KWANG ? "K" : "");
 	}
 }
 

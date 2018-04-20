@@ -1,6 +1,6 @@
 package example07;
 
-public class InnerEx3 {
+public class InnerEx3 { // p.407
 	private int outerIv = 0;
 	static int outerCv = 0;
 	
