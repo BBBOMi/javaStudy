@@ -3,7 +3,7 @@ package example08;
 import java.io.File;
 import java.util.Scanner;
 
-public class ExceptionEx15 { // p.431
+public class ExceptionEx15 { // p.431-432
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
