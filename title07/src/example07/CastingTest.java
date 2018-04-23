@@ -5,7 +5,7 @@ public class CastingTest { // p.361
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Car car =  new Car();
-		Car car2 = new FireEngine(); // 조상타입의 참조 변수로 자손타입 의 인스턴스 참조
+		Car car2 = new FireEngine(); // 조상타입의 참조 변수로 자손타입의 인스턴스 참조
 		Car car3 = new Car();
 		
 		FireEngine fe = new FireEngine();
@@ -17,7 +17,7 @@ public class CastingTest { // p.361
 		System.out.println("Car의 문의 개수: " + car2.door);
 		car2.drive();
 		car2.stop(); // 참조변수의 타입에 관계없이 항상 실제 인스턴스의 타입에 정의된 메소드가 호출
-		//car2.water(); // 지손타입의 인스턴스를 참조 하고 있더라도 water() 메소드가 조상타입의 멤버가 아니기 때문에 사용 불가
+		//car2.water(); // 자손타입의 인스턴스를 참조 하고 있더라도 water() 메소드가 조상타입의 멤버가 아니기 때문에 사용 불가
 		// 자손타입의 멤버 중 조상타입의 멤버만 사용 가능
 		
 		System.out.println();
