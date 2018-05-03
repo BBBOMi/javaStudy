@@ -8,7 +8,7 @@ public class Student implements Comparable<Student>{
 	boolean isMale; // 성별
 	int hak; // 학년
 	
-	Student(String name, boolean isMale, int hak, int ban, int totalScore) {
+	public Student(String name, boolean isMale, int hak, int ban, int totalScore) {
 		this.name = name;
 		this.isMale = isMale;
 		this.hak = hak;
@@ -29,11 +29,11 @@ public class Student implements Comparable<Student>{
 	// groupingBy()에서 사용
 	enum Level { HIGH, MID, LOW } // 성적을 상, 중, 하 세 단계로 분류
 	
-	String getName() { return name; }
-	int getBan() { return ban; }
-	int getTotalScore() { return totalScore; }
-	boolean isMale() { return isMale; }
-	int getHak() { return hak; }
+	public String getName() { return name; }
+	public int getBan() { return ban; }
+	public int getTotalScore() { return totalScore; }
+	public boolean isMale() { return isMale; }
+	public int getHak() { return hak; }
 	
 	// 총점 내림차순을 기본 정렬로 한다
 	public int compareTo(Student s) {
