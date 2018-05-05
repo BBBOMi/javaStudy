@@ -2,6 +2,7 @@ package example15.file;
 
 import java.io.*;
 
+/* 지정한 디렉토리(폴더)에 포함된 파일과 디렉토리의 목록을 보여주는 예제*/
 public class FileEx2 { // p.919
 
 	public static void main(String[] args) {

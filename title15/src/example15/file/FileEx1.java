@@ -2,6 +2,7 @@ package example15.file;
 
 import java.io.*;
 
+/* File 인스턴스를 생성하고 메소드를 이용해 파일의 경로와 구분자 등의 정보를 출력*/
 public class FileEx1 { // p.916
 
 	public static void main(String[] args)  throws IOException {

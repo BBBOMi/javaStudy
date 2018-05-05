@@ -3,6 +3,7 @@ package example15.file;
 import java.io.*;
 import java.util.ArrayList;
 
+/* 서브디렉토리와 그에 포함된 파일과 디렉토리의 목록을 출력하는 예제*/
 public class FileEx3 { // p.920-921
 	static int totalFiles = 0;
 	static int totalDirs = 0;
